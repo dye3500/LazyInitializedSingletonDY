@@ -1,6 +1,6 @@
 public class LazyInitializedSingleton {
-    private static LazyInitializedSingleton instance;
 
+    private static LazyInitializedSingleton instance;
 
     private LazyInitializedSingleton(){}
 
@@ -9,7 +9,5 @@ public class LazyInitializedSingleton {
             instance = new LazyInitializedSingleton();
         }
         return instance;
-}
-public void run() {
-        System.out.println("From run() method:" +  Thread.currentThread().getName());
+    }
 }
